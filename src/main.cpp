@@ -1,3 +1,6 @@
+#include <iostream>
+#include "main.h"
+
 /* #include <GL/glut.h> */
 
 /* void displayMe(void) */
@@ -24,7 +27,9 @@
 
 /*     return 0; */
 /* } */
+
 int main(int argc, char** argv)
 {
+    std::cout << FPS_VERSION_MAJOR << std::endl;
     return 0;
 }
