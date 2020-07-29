@@ -3,6 +3,5 @@
 ## Build with MinGW
 ```
 cd build
-cmake ../ -G "MinGW Makefiles"
-cmake --build .
+../build-mingw32-static.bat
 ```
