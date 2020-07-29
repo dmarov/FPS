@@ -1,30 +1,8 @@
-#include <iostream>
-/* #include "main.h" */
+#include <sqlite3.h>
+#include <stdio.h>
 
-#include <GL/glut.h>
-
-void displayMe(void)
+int main()
 {
-    glClear(GL_COLOR_BUFFER_BIT);
-    glBegin(GL_POLYGON);
-        glVertex3f(0.0, 0.0, 0.0);
-        glVertex3f(0.5, 0.0, 0.0);
-        glVertex3f(0.5, 0.5, 0.0);
-        glVertex3f(0.0, 0.5, 0.0);
-    glEnd();
-    glFlush();
-}
-
-int main(int argc, char** argv)
-{
-
-    glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_SINGLE);
-    glutInitWindowSize(300, 300);
-    glutInitWindowPosition(100, 100);
-    glutCreateWindow("Hello world");
-    glutDisplayFunc(displayMe);
-    glutMainLoop();
-    std::cout << FPS_VERSION_MAJOR << std::endl;
+    printf("%s\n", sqlite3_libversion());
     return 0;
 }
