@@ -21,8 +21,9 @@ int main(int argc, char **argv)
     glutInitDisplayMode(GLUT_SINGLE);
     glutInitWindowSize(300, 300);
     glutInitWindowPosition(100, 100);
-    glutCreateWindow("Hello world from Badprog.com :D");
+    glutCreateWindow("Hello world");
     glutDisplayFunc(displayMe);
     glutMainLoop();
+
     return 0;
 }
