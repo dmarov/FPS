@@ -32,28 +32,14 @@ public:
         glutMouseFunc(&EventLoop::on_mouse);
         glutSpecialFunc(&EventLoop::on_special);
         glutMainLoop();
-    }
-
-public:
-
-    static void on_display() {
 
     }
 
-    static void on_keyboard(unsigned char key, int x, int y) {
-
-        std::cout << key << " " << x << " " << y <<std::endl;
-    }
-
-    static void on_mouse(int button, int state, int x, int y) {
-
-        std::cout << button << " " << state << " " << x << " " << y <<std::endl;
-    }
-
-    static void on_special(int key, int x, int y) {
-
-        std::cout << key << " " << x << " " << y <<std::endl;
-    }
+private:
+    static void on_display();
+    static void on_keyboard(unsigned char key, int x, int y);
+    static void on_mouse(int button, int state, int x, int y);
+    static void on_special(int key, int x, int y);
 };
 
 #endif
