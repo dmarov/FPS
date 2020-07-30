@@ -3,8 +3,7 @@
 
 int main(int argc, char **argv)
 {
-    EventLoop loop(argc, argv);
-    loop.start();
+    EventLoop::start(argc, argv);
 
     return 0;
 }
